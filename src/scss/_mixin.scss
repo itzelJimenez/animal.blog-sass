@@ -1,0 +1,27 @@
+@mixin buttons($margin){
+	font-weight: .8rem;
+	padding: 10px 2px;
+	margin: $margin;
+	text-align: center;
+	background-color: $color-contrast;
+	border-radius: $border-button;
+	color: $color-base;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-weight: 800;
+}
+
+@mixin close(){
+	position: absolute;
+	margin-left: -15px;
+	float: left;
+	color: gray;
+	background:white;
+	padding: 2px;
+	size: 15px;
+}
+
+@mixin formatTex(){
+	margin: 2%;
+	font-size: 1rem;
+}

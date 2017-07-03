@@ -1,0 +1,51 @@
+@import 'variables';
+@import 'grid';
+@import 'functions';
+@import 'mixin';
+
+body{
+	background-color: white;
+	margin: 0 2% 0 2%;
+	@include formatTex();
+}
+section{
+	background-color: $color-back;
+}
+.right{
+	float: right;
+}
+.left{
+	float: left;
+}
+
+.header-content{
+	background-color: $color-base;
+	height: 100px;
+	padding: 3%;
+}
+.button{
+	@include buttons(0 0 0 2%) ;
+	&:hover{
+		background-color: $color-back;
+		color: $color-base;
+	}
+	&--active{
+		background-color: $color-accent;
+		color: white;
+	}
+	&--conten{
+		@include buttons(3%);
+	}
+}
+
+span{
+	@include close;
+	&:hover{
+		color: white;
+		background: black;
+		cursor: pointer;
+	}
+}
+
+
+/*# sourceMappingURL=main.scss.map */
